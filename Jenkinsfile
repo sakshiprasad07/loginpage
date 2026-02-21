@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    triggers {
-        githubPush()
-    }
-
     stages {
 
         stage('Checkout') {
@@ -18,6 +14,14 @@ pipeline {
                 bat 'npm install'
             }
         }
+
+
+
+
+
+
+
+        
 
         stage('Build & Deploy') {
             steps {
