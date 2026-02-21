@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers {
+        githubPush()
+    }
+
     stages {
 
         stage('Checkout') {
@@ -37,11 +41,5 @@ pipeline {
         failure {
             echo 'Pipeline failed!'
         }
-    }
-}
-
-pipeline {
-    triggers {
-        githubPush()
     }
 }
