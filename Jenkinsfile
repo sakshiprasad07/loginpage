@@ -39,3 +39,9 @@ pipeline {
         }
     }
 }
+
+pipeline {
+    triggers {
+        githubPush()
+    }
+}
