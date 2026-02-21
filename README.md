@@ -147,6 +147,4 @@ loginpage/
 
 ## License
 
-
-
 ISC
